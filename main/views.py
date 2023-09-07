@@ -117,8 +117,8 @@ def userRegistration(request):
         password2 = request.POST['password2']
         mobileNo = request.POST['mobileNumber']
 
-        print(password1)
-        print(password2)
+        # print(password1)
+        # print(password2)
 
         if password1 == password2:
             print("in")
@@ -137,7 +137,8 @@ def userRegistration(request):
                 user.save()
             # Save the Data to the Database
                 # userform.save()
-                return HttpResponse("REGISTERED")
+                # return HttpResponse("REGISTERED")
+                return redirect("signin")
 
                 HttpResponse('Registered')
 

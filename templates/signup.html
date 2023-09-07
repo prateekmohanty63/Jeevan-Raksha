@@ -72,7 +72,7 @@
                               <img src="{% static 'images/user-image.png' %}" alt="Avatar" style="width:100%">
                               <div class="data">
                                    <!-- using user registeration url from django backend -->
-                                   <span class="signup-btn"><a href="">Sign up</a></span>
+                                   <span class="signup-btn"><a href="{% url 'userReg' %}">Sign up</a></span>
                                    <h4><b>User</b></h4>
                                    <p>Visited as a User</p>
                               </div>
@@ -84,7 +84,7 @@
                               <img src="{% static 'images/doctor-registeration.png' %}" alt="Avatar" style="width:100%">
                               <div class="data">
                                    <!-- using doctor registeration url from django backend -->
-                                   <span class="signup-btn"><a href="">Sign up</a></span>
+                                   <span class="signup-btn"><a href="{% url 'doctorReg' %}">Sign up</a></span>
                                    <h4><b>Doctor</b></h4>
                                    <p>I am a Doctor</p>
                               </div>
@@ -96,7 +96,7 @@
                               <img src="{% static 'images/hospital-image.png' %}" alt="Avatar" style="width:100%">
                               <div class="data">
                                    <!-- using hospital registeration url from django backend -->
-                                   <span class="signup-btn"><a href="">Sign up</a></span>
+                                   <span class="signup-btn"><a href="{% url 'hospitalReg' %}">Sign up</a></span>
                                    <h4><b>Hospital</b></h4>
                                    <p>I own a Hospital</p>
                               </div>
